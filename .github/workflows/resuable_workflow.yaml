@@ -2,6 +2,10 @@ name: Reusable workflow
 
 on:
   workflow_call:
+    inputs:
+      additional:
+        type: string
+        description: "TEST"
   
 jobs:
   build:
