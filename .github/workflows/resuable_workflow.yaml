@@ -1,13 +1,12 @@
 name: Reusable workflow
 
 on:
-  workflow_dispatch:
-
   workflow_call:
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: demo workflow job
-          run: echo This is a demo start workflow
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: demo workflow job
+        run: echo This is a demo start workflow
 
